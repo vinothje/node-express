@@ -6,4 +6,6 @@ app.get('/', function(req, res) {
 	res.send('Hello world Vinoth !');
 });
 
-app.listen(port);
+app.listen(port, function() {
+	console.log("Listening to port" + port);
+});
